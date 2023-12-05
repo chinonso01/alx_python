@@ -4,9 +4,8 @@ number = random.randint(-10000, 10000)
 lastDigit = int(str(number)[-1:])
 
 if number < 0:
-    lastDigit = int(str(number)[0] + str(number)[-1])
-    if lastDigit < 6 and not 0:
-        result = "and is less than 6 and not 0"
+    lastDigit = str(number)[0] + str(number)[-1]
+    result = "and is less than 6 and not 0"
 else:
     if lastDigit > 5:
         result = "and is greater than 5"
