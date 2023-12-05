@@ -1,2 +1,2 @@
 for number in range(99):
-    print(f"Decimal: {number}, Hexadecimal: {hex(number)}")
+    print("{} = {}".format(number, hex(number)))
