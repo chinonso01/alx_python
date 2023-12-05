@@ -1,4 +1,6 @@
 for number in range(100):
-    print("{:02}, ".format(number), end="")
-
-print()
+    formatted_number = "{:02}".format(number)
+    if number < 99:
+        print(formatted_number + ", ", end="")
+    else:
+        print(formatted_number)
