@@ -2,8 +2,9 @@
 import random
 number = str(random.randint(-10000, 10000))
 lastDigit = int(number[-1:])
+value = int(number)
 
-if int(number) < 0:
+if value < 0:
     lastDigit = int(number[0] + number[-1])
     if lastDigit < 6 and not 0:
         result = "and is less than 6 and not 0"
@@ -13,4 +14,4 @@ else:
     elif lastDigit == 0:
         result = "and is 0"
     
-print("Last digit of {} is {} {}".format(number, lastDigit, result))
+print("Last digit of {} is {} {}".format(value, lastDigit, result))
