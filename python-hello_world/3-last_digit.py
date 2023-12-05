@@ -13,4 +13,4 @@ else:
     elif lastDigit == 0:
         result = "and is 0"
     
-print("Last digit of {} is {} {}".format(int(number), int(lastDigit), int(result)))
+print("Last digit of {} is {} {}".format(str(number), str(lastDigit), str(result)))
