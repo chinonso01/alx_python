@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import random
-number = random.randint(-10000, 10000)
+number = int(random.randint(-10000, 10000))
 
 if int(number[-1:]) > 5:
     result = "and is greater than 5"
