@@ -7,8 +7,3 @@ def fibonacci_sequence(n):
         a, b = b, a + b
 
     return fib_sequence
-
-print(fibonacci_sequence(6))
-print(fibonacci_sequence(1))
-print(fibonacci_sequence(0))
-print(fibonacci_sequence(20))
