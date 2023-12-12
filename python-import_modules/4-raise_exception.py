@@ -1,7 +1,7 @@
 def raise_exception():
-    raise TypeError("Exception has been raised")
+    raise TypeError()
 
 try:
     raise_exception()
 except TypeError as e:
-    print()
+    print("Exception has been raised")
