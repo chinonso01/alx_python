@@ -1,5 +1,5 @@
 def raise_exception():
-    raise TypeError()
+    raise [Expected]
 
 try:
     raise_exception()
