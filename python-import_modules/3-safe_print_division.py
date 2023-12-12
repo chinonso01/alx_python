@@ -11,7 +11,8 @@ def safe_print_division(a, b):
         print(f"An error occurred: {e}")
         return None
     else:
+        print("{} / {} = {}".format(a, b, result))
         return result
     finally:
         print("Inside result: {}".format(result))
-        print("{} / {} = {}".format(a, b, result))
+        
