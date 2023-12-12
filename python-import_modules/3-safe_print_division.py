@@ -2,14 +2,16 @@ def safe_print_division(a, b):
     try:
         result = a / b
     except ZeroDivisionError:
+        print("Division by zero is not allowed.")
         return None
     except Exception as e:
         return None
+    else:
+        return result
     finally:
         print("Inside result: {}".format(result))
-        return result
     
-a = 5
-b = 6
+a = 12
+b = 0
 result = safe_print_division(a, b)
 print("{} / {} = {}".format(a, b, result))
