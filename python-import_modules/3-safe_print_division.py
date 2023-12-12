@@ -11,5 +11,6 @@ def safe_print_division(a, b):
         print("Inside result: {}".format(result))
         return result
     
-
-print("{}".format(safe_print_division(5, 7)))
+a = int(input("Enter a number: "))
+b = int(input("Enter a number: "))
+print("{}".format(safe_print_division(a, b)))
