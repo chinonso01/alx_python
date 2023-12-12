@@ -14,7 +14,4 @@ def safe_print_division(a, b):
         return result
     finally:
         print("Inside result: {}".format(result))
-        
-a = int(input())
-b = int(input())
-print("{} / {} = {}".format(a, b, safe_print_division(a, b)))
+        print("{} / {} = {}".format(a, b, result))
