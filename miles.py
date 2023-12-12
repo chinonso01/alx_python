@@ -68,6 +68,7 @@ list_of_prime = getPrime(input("Enter a number: "))
 for i in list_of_prime:
     print(i)
 '''
+'''
 def sumAll(*args):
     sum = 0
     for i in args:
@@ -75,4 +76,57 @@ def sumAll(*args):
     return sum
  
 print("The sum is: ", sumAll(2,3,4,5,6,6,4,3))
+'''
 
+'''
+def solveForX(example):
+    x, operator, num1, equal, num2 = example.split()
+    num1 = int(num1)
+    num2 = int(num2)
+    if (operator == '+'):
+        return (num2 - num1)
+    elif (operator == '-'):
+        return (num1 + num2)
+    
+print("x = {}".format(solveForX("x + 5 = 9")))
+
+def prime(num):
+    for i in range(2, num):
+        if (num % i == 0):
+            return False
+    else:
+        return
+'''
+
+'''
+name = input("Please enter your name: ")
+
+def greetings(name):
+    print("Hello {name}".format(name = name))
+
+greetings(name)
+'''
+
+learners = ['john', 'fredy', 'ebuka', 'milke']
+
+i = 0
+while i < len(learners):
+    print("{} is awsome".format(learners[i].capitalize()))
+    i += 1
+
+for learner in learners:
+    print(f"{learner.capitalize()} is so so awsome")
+
+
+'''
+vowels = ['a', 'e', 'i', 'o', 'u']
+word = input("Provide a word to search for vowels: ")
+word = word.lower()
+found = []
+for i in word:
+    if i in vowels:
+        if i not in found:
+            found.append(i)
+for letter in found:
+    print(letter)
+'''
