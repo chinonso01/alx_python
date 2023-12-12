@@ -15,6 +15,6 @@ def safe_print_division(a, b):
     finally:
         print("Inside result: {}".format(result))
         
-a = 5
-b = 0
+a = int(input())
+b = int(input())
 print("{} / {} = {}".format(a, b, safe_print_division(a, b)))
