@@ -1,8 +1,12 @@
-class Square:
-    def __init__(self, size):
-        self.__size = size
+#!/usr/bin/python3
+"""A square module"""
 
-    def get_size(self):
-        return self.__size
-    
-square = Square(5)
+
+class Square:
+    """Defines a square class"""
+    def __init__(self, size):
+        """Initializes a square
+        Attributes:
+            size: size of the square
+        """
+        self.__size = size
