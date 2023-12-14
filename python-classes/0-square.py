@@ -4,3 +4,5 @@ class Square:
 
     def get_size(self):
         return self.__size
+    
+square = Square(5)
