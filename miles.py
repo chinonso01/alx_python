@@ -107,6 +107,7 @@ def greetings(name):
 greetings(name)
 '''
 
+'''
 learners = ['john', 'fredy', 'ebuka', 'milke']
 
 i = 0
@@ -116,6 +117,7 @@ while i < len(learners):
 
 for learner in learners:
     print(f"{learner.capitalize()} is so so awsome")
+'''
 
 
 '''
@@ -130,3 +132,16 @@ for i in word:
 for letter in found:
     print(letter)
 '''
+
+class User:
+    id = 89
+    name = "no name"
+    __password = None
+
+    def __init__(self, new_name=None):
+        self.is_new = True
+        if new_name is not None:
+            self.name = new_name
+
+u = User()
+u.is_new
