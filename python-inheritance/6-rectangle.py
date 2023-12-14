@@ -22,7 +22,6 @@ class Rectangle(BaseGeometry):
     """Base class for"""
     def __init__(self, width, height):
         """Constructor"""
-        # Validate and set private width and height attributes
         self.integer_validator("width", width)
         self.integer_validator("height", height)
         self.__width = width
