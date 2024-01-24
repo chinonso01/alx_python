@@ -19,8 +19,8 @@ def hbnb():
 def c(text):
     return "C " + text.replace('_', ' ')
 
-@app.route('/python/<text>', strict_slashes=False)
-def python(text='cool'):
+@app.route('/python/<text>', defaults={'text': 'is cool'}, strict_slashes=False)
+def python(text):
     return "Python " + text.replace('_', ' ')
 
 if __name__ == '__main__':
