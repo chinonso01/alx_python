@@ -27,7 +27,7 @@ def python(text):
 def number(n):
     return f'{n} is a number'
 
-@app.route('/number_template/<n>', strict_slashes=False)
+@app.route('/number_template/<float:n>', strict_slashes=False)
 def number_template(n):
     return render_template('5-number.html', n=n)
 
