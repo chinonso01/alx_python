@@ -1,15 +1,15 @@
 import MySQLdb
 import sys
 
-def search_states(username, password, database, state_name):
+def filter_states(username, password, database, state_name):
     try:
         # Connect to MySQL server
         db = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=database)
         cursor = db.cursor()
 
         # Execute SQL query to retrieve states matching the given name
-        query = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
-        cursor.execute(query, (state_name,))
+        query = "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(state_name)
+        cursor.execute(query)
         states = cursor.fetchall()
 
         # Display states
@@ -34,4 +34,4 @@ if __name__ == "__main__":
     database = sys.argv[3]
     state_name = sys.argv[4]
 
-    search_states(username, password, database, state_name)
+    filter_states(username, password, database, state_name)
