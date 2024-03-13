@@ -2,6 +2,14 @@
 """Defines the Base class."""
 
 class Base:
+    """
+    Base class for managing identifiers in the project.
+    
+    Attributes:
+        __nb_objects (int): A private class attribute to keep track of the number of objects.
+        id (int): Public instance attribute representing the identifier of the instance.
+    """
+
     __nb_objects = 0
 
     def __init__(self, id=None):
