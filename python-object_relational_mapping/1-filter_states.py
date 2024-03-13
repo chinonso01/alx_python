@@ -1,14 +1,14 @@
 import MySQLdb
 import sys
 
-def list_states_starting_with_N(username, password, database):
+def list_states_starting_with_n(username, password, database):
     try:
         # Connect to MySQL server
         db = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=database)
         cursor = db.cursor()
 
-        # Execute SQL query to retrieve states starting with 'N' (case insensitive)
-        cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' COLLATE utf8_general_ci ORDER BY id ASC")
+        # Execute SQL query to retrieve states starting with 'n' (case insensitive)
+        cursor.execute("SELECT * FROM states WHERE name LIKE 'n%' ORDER BY id ASC")
         states = cursor.fetchall()
 
         # Display states
@@ -32,4 +32,4 @@ if __name__ == "__main__":
     password = sys.argv[2]
     database = sys.argv[3]
 
-    list_states_starting_with_N(username, password, database)
+    list_states_starting_with_n(username, password, database)
